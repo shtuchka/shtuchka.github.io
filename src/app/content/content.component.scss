@@ -1,0 +1,64 @@
+.row {
+  height: 710px;
+  .col-md-8 {
+    margin-top: 30px;
+    .slider {
+      height: 440px;
+      .slideshow {
+        margin-left: 60px;
+        width: 615px;
+        height: 440px;
+        background-color: gray;
+      }
+    }
+    .slider-info {
+      margin-left: 60px;
+      margin-top: 20px;
+      width: 615px;
+      .si-name {
+        font-family: MyriadProSemiCondensed;
+        color: black;
+        font-size: 25px;
+      }
+      .si-img {
+        height: 30px;
+      }
+      .si-descrip {
+        color: black;
+        font-size: 20px;
+      }
+    }
+  }
+  .col-md-4 {
+    margin-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    .infa {
+      height: 240px;
+      .infa-photo {
+        float: left;
+        width: 200px;
+        height: 238px;
+      }
+      .infa-name {
+        float: left;
+        width: 160px;
+        margin-left: 20px;
+      }
+    }
+    .experience {
+      height: 410px;
+      margin-top: 10px;
+      .yellow-line {
+        background-color: #F7F410;
+        height: 10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
+      }
+      .experience-deteils {
+        height: 330px;
+        margin-top: 20px;
+        overflow: scroll;
+      }
+    }
+  }
+}
