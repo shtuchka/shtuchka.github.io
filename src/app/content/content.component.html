@@ -1,76 +1,54 @@
 <div class="row">
-   <div class="col-md-8">
-      <div class="slider">
-         <div class="slideshow">
-            <carousel>
-               <slide>
-                  <img src="assets/img/slides/7.jpg" alt="First slide">
-                  <div class="slider-info">
-                     <div class="si-name">Third slide 1</div>
-                     <p class="si-descrip">Praesent commodo cursus magna, vel scelerisque nisl olololo.</p>
-                  </div>
-               </slide>
-               <slide>
-                  <img src="assets/img/slides/8.jpg" alt="Second slide">
-                  <div class="slider-info">
-                     <div class="si-name">Third slide 2</div>
-                     <p class="si-descrip">Praesent commodo cursus magna, vel kdkmskdlskdls nisl consectetur.</p>
-                  </div>
-               </slide>
-               <slide>
-                  <img src="assets/img/slides/5.jpg" alt="Third slide">
-                  <div class="slider-info">
-                     <div class="si-name">Third slide 3</div>
-                     <p class="si-descrip">Praesent commodo cursus magna, vl;l;l;lel scelerisque nisl consectetur.</p>
-                  </div>
-               </slide>
-            </carousel>
-         </div>
+  <div class="col-md-8">
+    <div class="slider">
+      <div class="slideshow">
+        <carousel>
+          <slide *ngFor="let slide of slides">
+            <img src="{{slide.img}}" alt="First slide">
+            <div class="slider-info">
+              <div class="si-name">{{slide.title}}</div>
+              <p class="si-descrip">{{slide.description}}</p>
+            </div>
+          </slide>
+        </carousel>
       </div>
-      <!--<div class="slider-info">
-         <div class="si-name">This is Photoshop's version of Lorem Ipsum.</div>
-         <div class="si-img"> time</div>
-         <p class="si-descrip">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,
-           nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
-           velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
-         </p>
-         </div>-->
-   </div>
-   <div class="col-md-4">
-      <div class="infa">
-         <img class="infa-photo" src="assets/img/photo.png">
-         <div class="infa-name">
-            <h4>Shtuchka Lena</h4>
-            <p>Age 25</p>
-            <p>Experience of designer work more than 3 years</p>
-            <p>Higher education with 09.2008 to 03.2013 specialty«Design Environment»</p>
-         </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="infa">
+      <img class="infa-photo" src="assets/img/photo.png">
+      <div class="infa-name">
+        <h4>Shtuchka Lena</h4>
+        <p>Age 25</p>
+        <p>Experience of designer work more than 3 years</p>
+        <p>Higher education with 09.2008 to 03.2013 specialty «Design Environment» </p>
       </div>
-      <div class="experience">
-         <h1>Experience</h1>
-         <div class="yellow-line"></div>
-         <div class="experience-deteils">
-            <h4>Designer</h4>
-            <p>from 08.2015 up to the present.(1 year 4 months) «Monopoly company» (Ukraine, Herson) (system of construction andbusiness
-               of supermarkets, retail trade). Creating design of promotional products. Creating a layout design salesrooms of
-               supermarkets and facades. Design and pre-press design campaign proposals (flyer, A4 leaflets, posters A1, outdoor
-               advertising)
-            </p>
-            <p>from 11.2014 to 07.2015 (8 months) «Monopoly company» (Ukraine, Herson) Creating dasing of promotional products,
-               creation advertising newspapers, prepress and preparation of printingproducts.
-            </p>
-            <h4>Maker-up designerand designer of advertising</h4>
-            <p>from 02.2014 to 09.2014 (7 months) «Prospect Media Group» (the media) (Ukraine, Herson) Engaged page-proofs and pre-press
-               magazine «Vibiray»*, the development of advertising models for the magazine's and web site, social networks,
-               advertising and magazine production.
-            </p>
-            <h4>Designer</h4>
-            <p>from 04.2013 to 11.2013 (7 months) AOA «Svet Inform» (Agency of the outdoor advertising) Create outdoor advertising
-               layouts for clients, as wellas for charitable fund «Fund of Ustin Maltsev».Prepress printing products, working
-               with printing office.* «Vibiray» - entertainment magazine which ipublished in the 33 cities of the CIS. Format
-               A5 +.
-            </p>
-         </div>
+    </div>
+    <div class="experience">
+      <h1>Experience</h1>
+      <div class="yellow-line"></div>
+      <div class="experience-deteils">
+        <h4>Designer</h4>
+        <p>from 08.2015 up to the present.(1 year 4 months) «Monopoly company» (Ukraine, Herson) (system of construction and business
+          of supermarkets, retail trade). Creating design of promotional products. Creating a layout design salesrooms of
+          supermarkets and facades. Design and pre-press design campaign proposals (flyer, A4 leaflets, posters A1, outdoor
+          advertising)
+        </p>
+        <p>from 11.2014 to 07.2015 (8 months) «Monopoly company» (Ukraine, Herson) Creating dasing of promotional products, 
+          creation advertising newspapers, prepress and preparation of printing products.
+        </p>
+        <h4>Maker-up designer and designer of advertising</h4>
+        <p>from 02.2014 to 09.2014 (7 months) «Prospect Media Group» (the media) (Ukraine, Herson) Engaged page-proofs and pre-press
+          magazine «Vibiray»*, the development of advertising models for the magazine's and web site, social networks, 
+          advertising and magazine production.
+        </p>
+        <h4>Designer</h4>
+        <p>from 04.2013 to 11.2013 (7 months) AOA «Svet Inform» (Agency of the outdoor advertising) Create outdoor advertising
+          layouts for clients, as well as for charitable fund «Fund of Ustin Maltsev».Prepress printing products, working
+          with printing office.* «Vibiray» - entertainment magazine which ipublished in the 33 cities of the CIS. Format
+          A5 +.
+        </p>
       </div>
-   </div>
+    </div>
+  </div>
 </div>

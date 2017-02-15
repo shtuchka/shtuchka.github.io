@@ -8,7 +8,10 @@
         margin-left: 60px;
         width: 615px;
         height: 440px;
-        background-color: gray;
+        img {
+        width: 615px;
+        height: 440px;
+        }
       }
     }
     .slider-info {
@@ -57,7 +60,7 @@
       .experience-deteils {
         height: 330px;
         margin-top: 20px;
-        overflow: scroll;
+        overflow-y: scroll;
       }
     }
   }
