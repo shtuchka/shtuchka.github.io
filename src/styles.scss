@@ -1,8 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
 a:hover {
   text-decoration: none;
 }
 
 p {
   color: black;
+}
+
+.carousel-control.left {
+  background-image: none!important;
+  left: -90px!important;
+  color: gray;
+  margin-top: -550px;
+}
+
+.carousel-control.right {
+  background-image: none!important;
+  right: -90px!important;
+  color: gray;
+  margin-top: -550px;
+}
+
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+  font-size: 70px!important;
+}
+
+.carousel-control {
+  top: auto!important;
+  bottom: auto!important;
 }
